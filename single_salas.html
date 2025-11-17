@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-menu">
+      <img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/logo.png" alt="Logo da SpaceHub" />
+      <ul>
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="quem_somos.html">A SPACEHUB</a></li>
+        <li><a href="salas_comerciais.html">SALAS COMERCIAIS</a></li>
+        <li><a href="espacos_trabalho.html">ESPAÇOS DE TRABALHO</a></li>
+        <li><a href="contato.html">FALE CONOSCO</a></li>
+      </ul>
+      <button><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/user-svg.svg" alt="" />LOGIN</button>
+    </div>
+
+    <div class="galeria">
+      <img
+        src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Sala-Anchor1.png"
+        alt="Imagem 1"
+        onclick="abrirZoom(this)"
+      />
+      <img
+        src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Sala-Anchor2.png"
+        alt="Imagem 1"
+        onclick="abrirZoom(this)"
+      />
+      <img
+        src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Sala-Anchor3.png"
+        alt="Imagem 1"
+        onclick="abrirZoom(this)"
+      />
+    </div>
+
+    <div id="zoom" onclick="fecharZoom()">
+      <img id="imagemZoom" src="" alt="Zoom" />
+    </div>
+
+    <!-- ------------------------info salas--------------------------- -->
+    <div class="area-cont" style="padding: 0 60px">
+      <div class="info">
+        <ul>
+          <li>
+            <a class="icon-cent btn share" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/share-svgrepo-com.svg" alt="" />Compartilhar</a
+            >
+          </li>
+          <li>
+            <a class="icon-cent btn share" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/heart-svgrepo-com.svg" alt="" />Favoritar</a
+            >
+          </li>
+        </ul>
+
+        <ul style="margin-top: 30px">
+          <li>
+            <a class="icon-cent" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/calendar-svgrepo-com.svg" alt="" />Data/Agosto 25,
+              2025</a
+            >
+          </li>
+          <li>
+            <a class="icon-cent" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/house-svgrepo-com.svg" alt="" />Sala/Escritório</a
+            >
+          </li>
+          <li>
+            <a class="icon-cent" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/price-tag-svgrepo-com (1).svg" alt="" />Flex,
+              Studio Pro, etc</a
+            >
+          </li>
+        </ul>
+
+        <h2 class="titulo-principal">Sala Anchor Moderna</h2>
+        <div style="display: flex; flex-direction: row; margin-top: 13px">
+          <h2
+            class="titulo-principal"
+            style="font-size: 23px; margin: 0; padding-right: 10px"
+          >
+            Aluguel:
+          </h2>
+          <span
+            style="color: rgb(2, 116, 223); font-weight: 600; font-size: 23px"
+            >R$ 590,00</span
+          >
+        </div>
+        <h2
+          class="titulo-principal"
+          style="
+            font-size: 25px;
+            margin: 0;
+            padding: 10px 10px 6px 0;
+            border-bottom: 1px solid #d6d6d6;
+            margin-top: 20px;
+          "
+        >
+          Descrição do Imóvel
+        </h2>
+        <p
+          style="
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 17px;
+            border-bottom: 1px solid #d6d6d6;
+            padding-bottom: 15px;
+          "
+        >
+          Situada em uma das áreas mais exclusivas de São Paulo, no Jardim
+          Guedala, esta residência de luxo combina arquitetura clássica com todo
+          o conforto moderno. Com 1.000m² de área construída em um terreno de
+          2.500m², a casa oferece um ambiente sofisticado e acolhedor. A entrada
+          imponente leva a um hall com pé-direito duplo, que se conecta à sala
+          de estar e à sala de jantar, ambas com vista para o jardim. A cozinha
+          gourmet, equipada com os melhores eletrodomésticos, possui uma ilha
+          central e uma despensa espaçosa. O andar superior acomoda 5 suítes,
+          todas com closets embutidos e banheiros revestidos em mármore, sendo a
+          suíte master um verdadeiro destaque com uma varanda privativa, sala
+          íntima e banheiro com jacuzzi. A área externa é um convite ao
+          relaxamento, com uma piscina aquecida, jacuzzi, e um espaçoso gazebo
+          com churrasqueira e forno de pizza. A residência ainda conta com um
+          home theater, sala de jogos, adega climatizada, e garagem para 8
+          carros. Com segurança reforçada e uma localização que oferece
+          tranquilidade e privacidade, esta propriedade é ideal para famílias
+          que buscam um refúgio exclusivo na cidade.
+        </p>
+        <h2
+          class="titulo-principal"
+          style="
+            font-size: 25px;
+            margin: 0;
+            padding: 10px 10px 6px 0;
+            border-bottom: 1px solid #d6d6d6;
+            margin-top: 20px;
+          "
+        >
+          Comodidades Oferecidas
+        </h2>
+        <p
+          style="
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 17px;
+            padding-bottom: 15px;
+          "
+        >
+          Oferecemos as seguintes comodidades e serviços inclusos (se aplicável):
+        </p>
+
+        <ul class="lista-comodidades">
+          <li><a class="icon-cent comodidades" href="#"
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/arrow-narrow-circle-broken-down-svgrepo-com.svg" alt="" />1000m²</a
+            ></li>
+          <li><a class="icon-cent comodidades" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/arrow-narrow-circle-broken-down-svgrepo-com.svg" alt="" />2 vagas</a
+            ></li>
+          <li><a class="icon-cent comodidades" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/arrow-narrow-circle-broken-down-svgrepo-com.svg" alt="" />2 banheiros</a
+            ></li>
+          <li><a class="icon-cent comodidades" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/arrow-narrow-circle-broken-down-svgrepo-com.svg" alt="" />Mobília</a
+            ></li>
+        </ul>
+        <h2
+          class="titulo-principal"
+          style="
+            font-size: 25px;
+            margin: 0;
+            padding: 10px 10px 6px 0;
+            margin-top: 20px;
+          "
+        >
+          Localização
+        </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.971108104439!2d-48.446767790359225!3d-1.4549775258487991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c517bfd06bd%3A0x8cbe0b977db3748b!2sUniversidade%20Federal%20Rural%20da%20Amaz%C3%B4nia!5e0!3m2!1spt-BR!2sbr!4v1763254432867!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="430px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <ul style="margin-top: 10px">
+          <li>
+            <a class="icon-cent" href=""
+              ><img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/location-svgrepo-com.svg" alt="" />Endereço Fictício, Belém, Brasil</a
+            >
+          </li>
+      </div>
+
+
+      <!-- ------------------------------------------------outra div-------------------- -->
+      <div class="info-contato">
+        <h2
+          class="titulo-principal"
+          style="
+            font-size: 25px;
+            margin: 0;
+            padding: 10px 10px 6px 0;
+            border-bottom: 1px solid #d6d6d6;
+            margin-top: 20px;
+          "
+        >
+          Verificar Disponibilidade
+        </h2>
+        <img src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Captura de tela 2025-11-16 212317.png" 
+       width="100%" style="margin-top: 20px;" alt="">
+       <p>*É UMA IMAGEM, NÃO SEI COMO FAZER O CLAENDÁRIO*</p>
+      </div>
+    </div>
+
+    <div class="container-principal salas-comerciais" style="background-color: rgb(240, 240, 240); padding-top: 20px; padding-bottom: 30px;">
+      <div class="ver-botao">
+        <a class="icon-cent" href="#"
+          ><img
+            src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/arrow-sm-right-svgrepo-com.svg"
+            alt="icon de seta"
+          />Ver Todas</a
+        >
+      </div>
+      <h2 class="titulo-principal">Outras Salas Comerciais</h2>
+      <div class="cards">
+        <div class="card-single">
+          <div class="media">
+            <span class="flag" aria-hidden="true">Flex</span>
+            <img
+              src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Sala-Vertice1.png"
+              alt="Fachada elegante do apartamento com varanda e vista"
+            />
+            <div class="preco-destaque">R$ 10.000</div>
+          </div>
+
+          <div class="content">
+            <h3 class="title">Sala Vértice</h3>
+
+            <p class="descricao">
+              Localização premium, perto do metrô, varanda ampla e acabamento de
+              alto padrão. 120 m², 2 vagas de garagem.
+            </p>
+            <a class="btn" href="#"> Ver detalhes </a>
+          </div>
+        </div>
+        <div class="card-single">
+          <div class="media">
+            <span class="flag" aria-hidden="true">Studio Pro</span>
+            <img
+              src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/Sala-Anchor1.png"
+              alt="Fachada elegante do apartamento com varanda e vista"
+            />
+            <div class="preco-destaque">R$ 30.000</div>
+          </div>
+
+          <div class="content">
+            <h3 class="title">Sala Anchor Moderna</h3>
+
+            <p class="descricao">
+              Localização premium, perto do metrô, varanda ampla e acabamento de
+              alto padrão. 120 m², 2 vagas de garagem.
+            </p>
+            <a class="btn" href="#"> Ver detalhes </a>
+          </div>
+        </div>
+        <div class="card-single">
+          <div class="media">
+            <span class="flag" aria-hidden="true">Corporate Floor</span>
+            <img
+              src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/estacao-criativa1.png"
+              alt="Fachada elegante do apartamento com varanda e vista"
+            />
+            <div class="preco-destaque">R$ 50.000</div>
+          </div>
+
+          <div class="content">
+            <h3 class="title">Estação Criativa Tower</h3>
+
+            <p class="descricao">
+              Localização premium, perto do metrô, varanda ampla e acabamento de
+              alto padrão. 120 m², 2 vagas de garagem.
+            </p>
+            <a class="btn" href="#"> Ver detalhes </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------------------footer---------------------------------- -->
+     <div class="container-principal footerdiv">
+      <div class="cards">
+        <div class="box card foot">
+          <img id="logo-foot" src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/logo.png" alt="Logo da SpaceHub" />
+          <p style="text-align: justify; color: white">
+            A SpaceHub é uma empresa fictícia criada como parte da disciplina de
+            Dev. de Sist. Web na UFRA. Ela atua no ramo de aluguel de salas
+            corporativas compartilhadas.
+          </p>
+        </div>
+        <div class="box card foot" style="padding-left: 50px">
+          <h3>Navegação Principal</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="salas_comerciais.html">Salas Comerciais</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="box card foot">
+          <h3>Informações e Suporte</h3>
+          <ul>
+            <li>
+              <a href="#">Política de Privacidade</a>
+            </li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Suporte Técnico</a></li>
+          </ul>
+        </div>
+        <div class="box card foot">
+          <h3>Conecte-se Conosco</h3>
+          <ul>
+            <li>
+              <a href="#" class="icon-cent"
+                ><img
+                  src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/phone-calling-rounded-svgrepo-com.svg"
+                  style="padding-right: 8px"
+                  alt="Ícone de telefone"
+                />(91) 98084-9759</a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon-cent"
+                ><img
+                  src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/chat-unread-svgrepo-com.svg"
+                  style="padding-right: 8px"
+                  alt="Ícone de telefone"
+                />spacehub@email.com</a
+              >
+            </li>
+            <ul style="display: flex; flex-direction: row">
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/instagram-1-svgrepo-com.svg"
+                    alt="ícone social do instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/whatsapp-svgrepo-com.svg"
+                    alt="ícone social do whatsapp"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/linkedin-1-svgrepo-com.svg"
+                    alt="ícone social do linkedin"
+                /></a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rodape">
+      <hr
+        style="
+          border: none;
+          height: 1px;
+          background-color: #dbdbdb;
+          width: 100%;
+        "
+      />
+      <p style="margin-top: 15px">
+        2025 © SpaceHub. Todos os direitos reservados.
+      </p>
+      <p style="margin-top: -3px">Desenvolvido por Alunos do ICIBE, LC.</p>
+    </div>
+
+    <script>
+      function abrirZoom(img) {
+        document.getElementById("imagemZoom").src = img.src;
+        document.getElementById("zoom").style.display = "flex";
+      }
+
+      function fecharZoom() {
+        document.getElementById("zoom").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

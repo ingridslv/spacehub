@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container-contato">
+      <section class="informacoes-rapidas">
+        <div class="cartao-info">
+          <span class="icone-info">📍</span>
+          <p class="titulo-info">NOSSO ESCRITÓRIO PRINCIPAL</p>
+          <p class="detalhe-info">SoHo 94 Broadway St Nova York, NY 1001</p>
+        </div>
+
+        <div class="cartao-info">
+          <span class="icone-info">📞</span>
+          <p class="titulo-info">NÚMERO DE TELEFONE</p>
+          <p class="detalhe-info">234-9876-5400</p>
+          <p class="detalhe-info">888-0123-4567 (ligação gratuita)</p>
+        </div>
+
+        <div class="cartao-info">
+          <span class="icone-info">📠</span>
+          <p class="titulo-info">FAX</p>
+          <p class="detalhe-info">1-234-567-8900</p>
+        </div>
+
+        <div class="cartao-info">
+          <span class="icone-info">📧</span>
+          <p class="titulo-info">E-MAIL</p>
+          <p class="detalhe-info">ola@theme.com</p>
+        </div>
+      </section>
+
+      <div class="area-interativa">
+        <div class="bloco-formulario">
+          <h2 class="titulo-bloco">Informações de contato</h2>
+
+          <form class="formulario-mensagem">
+            <div class="campo-grupo">
+              <label for="email" class="rotulo">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                class="campo-texto"
+                placeholder="Insira um endereço de e-mail"
+              />
+            </div>
+
+            <div class="campo-grupo">
+              <label for="nome" class="rotulo">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                class="campo-texto"
+                placeholder="Digite seu nome"
+              />
+            </div>
+
+            <div class="campo-grupo-mensagem">
+              <label for="mensagem" class="rotulo">Mensagem</label>
+              <textarea
+                id="mensagem"
+                class="campo-mensagem"
+                placeholder="Digite sua mensagem"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="botao-enviar">ENVIAR</button>
+          </form>
+
+          <p class="creditos">Imagem de Freepik</p>
+        </div>
+
+        <div class="bloco-mapa">
+          <p class="texto-mapa"></p>
+          <p class="texto-mapa">Mapa simulado de New York</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
