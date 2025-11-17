@@ -81,7 +81,7 @@ body {
 
 .banner {
   height: 630px;
-  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa.jpg');
+  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,13 +104,13 @@ body {
 /* --------------- */
 
 .contato-banner {
-  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-contato.jpg');
+  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-contato.png');
 }
 
 /* -------------------- */
 
 .quem-banner {
-  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/banner-qm.png');
+  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-qmsomos.png');
   background-position-y: top;
 }
 
