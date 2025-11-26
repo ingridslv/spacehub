@@ -77,6 +77,9 @@ body {
     width: 100%;
 }
 
+.img-mobile {
+  display: none;
+}
 /*------------------------------------banner-------------------------------------*/
 
 .banner {
@@ -113,6 +116,11 @@ body {
   background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-qmsomos.png');
   background-position-y: top;
 }
+.salas-comerciais-banner {
+  background-image: linear-gradient(rgba(16, 28, 87, 0.8), rgba(16, 28, 87, 0.8)), url('https://raw.githubusercontent.com/ingridslv/repositorio-imagens/main/assets/img/spacehub/capa-salas.png');
+  background-position-y: top;
+}
+
 
 /* ------------------------ */
 
@@ -130,12 +138,112 @@ body {
     border: #FC9404;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
 }
+
 
 .banner button:hover {
     background: #1a509c;
 }
 
+/* ------------------------------------header mb------------------- */
+@media (max-width: 768px) {
+    /* --- Header --- */
+    .header-menu {
+        position: fixed; 
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .header-menu img {
+        width: 140px;
+    }
+
+    .header-menu ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header-menu ul li a {
+        justify-content: center;
+        margin: 5px 0;
+        font-size: 16px;
+        padding: 10px; 
+        display: block;
+    }
+
+    .header-menu button {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 10px;
+    }
+
+    .header-menu button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --- Banner --- */
+    .banner {
+        height: auto; 
+        min-height: 500px;
+        padding: 60px 20px; 
+        background-attachment: scroll;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .banner p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .banner form#searchForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .banner input {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        padding: 15px 20px; 
+        box-sizing: border-box;
+    }
+
+    .banner button {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .header-menu ul, .header-menu button {
+      display: none;
+    }
+
+    .img-mobile{
+      display: flex;
+      cursor: pointer;
+    }
+
+    .header-menu.active ul, .header-menu.active button {
+      display: flex;
+    }
+}
+
+/* -----------------------------------------------------icones----- */
 .icones-container {
     display: flex;
     gap: 30px;
@@ -166,6 +274,23 @@ body {
 
 .icones-container {
     margin-top: -50px;
+}
+
+@media (max-width: 768px) {
+    .icones-container {
+        flex-direction: column; /* Empilha os blocos verticalmente */
+        margin-left: 20px;      /* Reduz a margem lateral de 180px para 20px */
+        margin-right: 20px;
+        margin-top: -30px;      /* Ajusta levemente a subida sobre o banner */
+        gap: 20px;              /* Espaço entre os cards */
+        position: relative;     /* Garante que fique acima do fundo */
+        z-index: 10;
+    }
+
+    .box {
+        width: 100%;            /* Garante que o box ocupe a largura total do container */
+        padding: 30px 20px;     /* Aumenta área de respiro interno */
+    }
 }
 
 /* -------------------------cards trabalho-------------------------------------------- */
@@ -203,7 +328,7 @@ body {
 
 .card-single {
   width: 100%;
-  max-width: 400px;
+  max-width: 397px;
   background-color: #f7f7f7;
   border-radius: 12px;
   box-shadow: #0d4f8b1f;
@@ -211,6 +336,10 @@ body {
   display: grid;
   border: 1px solid #0d4f8b0f;
   flex: 1 1 400px;
+}
+
+.info .card-single {
+  width: 90%;
 }
 
 .media {
@@ -269,7 +398,7 @@ body {
   margin-top: 4px;
   background: linear-gradient(90deg, #ff7818d0, #f77920d0);
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 14px;
   border-radius: 20px;
   font-weight: 700;
@@ -281,6 +410,10 @@ body {
   gap: 8px;
   max-width: fit-content;
   transition: transform 0.3s ease;
+}
+
+.content .btn {
+  color: white;
 }
 
 .btn:hover {
@@ -578,8 +711,59 @@ iframe {
   background-color: #869bb9;
 }
 
+/* ------------------footer mobile--------------------- */
+@media (max-width: 768px) {
+    .footerdiv .cards {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
 
+    .box.card.foot {
+        width: 100%;
+        text-align: center;
+        /* !important necessário para sobrescrever o style="padding-left: 50px" inline do HTML */
+        padding: 20px 20px 40px 20px !important; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #logo-foot {
+        margin-left: 0; /* Remove a margem esquerda do desktop */
+        width: 60%;
+        max-width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .foot ul {
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .foot h3 {
+        padding-top: 0;
+        margin-bottom: 15px;
+    }
+
+    /* Centralizar o container dos ícones sociais */
+    .box.card.foot ul ul {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .rodape {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .rodape p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+}
 
 
 /* ------------------------galeria-salas----------------- */
@@ -631,6 +815,10 @@ iframe {
 
 .info-contato {
   flex: 1;
+}
+
+.inf {
+  flex: 2;
 }
 
 .info .share img {
@@ -699,8 +887,96 @@ iframe {
   flex: 1;
 }
 
+/* -----------------------------salas comerciais--------------------------- */
 
 
+.formstyle input {
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.formstyle button {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #ff964bd0, #f77920d0);
+  font-size: 14px;
+  border: #FC9404;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formstyle label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.select {
+  max-width: 300px;
+  margin: 20px 0;
+}
+
+.select label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+
+.select select {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  color: #242424;
+}
+
+.filtro {
+  max-width: 250px;
+  padding: 15px;
+}
+
+.filtro h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4f46e5; /* Roxo bonito (suporta Chrome/Edge/Firefox) */
+}
+
+.checkbox span {
+  font-size: 15px;
+}
+
+.filtros-fixos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px; /* ajuste conforme você quiser */
+  height: 100vh; /* ocupa a tela inteira na vertical */
+  overflow-y: auto; /* cria barra de rolagem se o conteúdo for maior */
+  background: #fff; /* importante para não ficar transparente */
+  padding: 20px 40px;
+  z-index: 999;
+  border-right: 1px solid #e2e2e2; /* opcional */
+}
 
 
 
