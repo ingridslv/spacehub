@@ -1,3 +1,5 @@
+// ----------------menu----------------
+
 const icon = document.querySelector(".img-mobile");
 const menu = document.querySelector(".header-menu");
 
